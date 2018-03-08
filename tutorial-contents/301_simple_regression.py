@@ -16,8 +16,9 @@ np.random.seed(1)
 
 # fake data
 x = np.linspace(-1, 1, 100)[:, np.newaxis]          # shape (100, 1)
-noise = np.random.normal(0, 0.1, size=x.shape)
-y = np.power(x, 2) + noise                          # shape (100, 1) + some noise
+# noise = np.random.normal(0, 0.1, size=x.shape)
+# y = np.power(x, 2) + noise                          # shape (100, 1) + some noise
+y = x**2 - 5
 
 # plot data
 plt.scatter(x, y)
